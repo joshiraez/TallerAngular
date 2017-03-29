@@ -70,7 +70,7 @@
                         <th>Número mascotas</th>
                         <th>Acciones</th>
                     </tr>
-                    <tr class="text-left" ng-repeat="owner in owners" ng-if="owner.name.includes(filtro)"  ng-class="{'text-danger' : owner.numPets==0}">
+                    <tr class="text-left" ng-repeat="owner in owners" ng-if="owner.name.includes(filtro)"  ng-class="{'text-danger' : owner.numPets==0}"> <!-- Tambien ng-class="owner.numPets==0 ? 'text-danger' : '' -->
                         
                         <td> {{ $index + 1 }}</td>
                         <td>{{ owner.name }}</td>
